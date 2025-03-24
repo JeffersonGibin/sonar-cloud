@@ -26,6 +26,13 @@
  
   "jest": {
     "testEnvironment": "node",
-    "transform": {}
+    "transform": {},
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ]
   }
 }
