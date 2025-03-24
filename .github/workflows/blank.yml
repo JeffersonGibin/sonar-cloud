@@ -3,9 +3,13 @@ on:
   pull_request:
     branches:
       - develop
-    
+    types:
+      - opened
+      - synchronize
+
 jobs:
   build:
+    if: github.base_ref == 'develop' && github.head_ref == 'main'
     name: SonarQube
     runs-on: ubuntu-latest
     steps:
