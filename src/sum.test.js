@@ -6,6 +6,6 @@ describe('lib unit test', () => {
     });
 
     it('Should subtract two numbers', () =>{
-        expect(subtract(3, 2)).toBe(0);
+        expect(subtract(3, 2)).toBe(1);
     });
 })
